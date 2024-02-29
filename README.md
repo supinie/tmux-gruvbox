@@ -1,5 +1,7 @@
 # Gruvbox color theme configuration for Tmux
 
+This is a fork from [egel's](https://github.com/egel/tmux-gruvbox) theme, adding a custom script to fetch the current git repo. If the user is inside a git repo, then it will display that in the window status, else it will use default behaviour.
+
 Theme with 'retro groove' flavor for [Tmux][github-tmux], based on Pavel Pertsev's [gruvbox colorscheme][github-grovbox] and inspired by work of [Gordon Chiam](https://gist.github.com/gchiam/4606522f513cc64b79ce). Subthemes switching inspired by [tmux-color-solarized][tmux-color-solarized].
 
 > Screenshots made from macOS builtin terminal with xterm-256color and [Hack font][github-hack].
@@ -25,7 +27,7 @@ cat tmux-gruvbox-dark.conf >> ~/.tmux.conf
 Add plugin to the list of TPM plugins in `.tmux.conf` and select desired theme
 
 ```bash
-set -g @plugin 'egel/tmux-gruvbox'
+set -g @plugin 'supinie/tmux-gruvbox'
 set -g @tmux-gruvbox 'dark' # or 'light'
 ```
 
